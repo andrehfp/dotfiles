@@ -5,11 +5,13 @@ Want to make your own git bare repository?  First, make a directory for your new
 Then I entered the following in the terminal:
 
 git init --bare $HOME/dotfiles
+
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add this alias to .bashrc)
 bash
+
 config config --local status.showUntrackedFiles no
 
-Basic usage example:
+## Basic usage example:
 
 config add /path/to/file
 
