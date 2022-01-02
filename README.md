@@ -12,5 +12,7 @@ config config --local status.showUntrackedFiles no
 Basic usage example:
 
 config add /path/to/file
+
 config commit -m "A short message"
+
 config push
