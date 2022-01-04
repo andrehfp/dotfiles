@@ -39,7 +39,11 @@ alias yt="youtube-dl --add-metadate -ic --verbose"
 #Download video audio
 alias yta="youtube-dl --add-metadata -xic --verbose"
 alias zsource="source ~/.zshrc"
-alias pcurl="curl -X POST https://pixel-cart-api.rj.r.appspot.com/products/update-algolia"
+
+#Git Aliases
+alias gca="git commit -a"
+alias gpo="git push origin"
+
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
