@@ -43,7 +43,8 @@ alias zsource="source ~/.zshrc"
 #Git Aliases
 alias gca="git commit -a"
 alias gpo="git push origin"
-
+alias gc="git checkout"
+alias g="git"
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
