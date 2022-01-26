@@ -32,22 +32,28 @@ autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 call plug#begin('~/.vim/plugged')
-" Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 Plug 'drewtempelmeyer/palenight.vim' " Soothing color scheme for your favorite [best] text editor
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'pangloss/vim-javascript'
-" Plug 'mxw/vim-jsx'
-" Plug 'peitalin/vim-jsx-typescript'
-" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-" Plug 'jparise/vim-graphql'
-
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 colorscheme palenight
 set background=dark
 
 let mapleader=" "
+
+" NerdTree Configs
+nnoremap <silent><leader>ne :NERDTreeToggle<CR>
+nmap <leader>nf :NERDTreeFind<CR>
+
 " Use <Tab> and <S-Tab> to navigate the completion list
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -63,8 +69,6 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-json',
             \ ]
-
-
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 "if hidden is not set, TextEdit might fail.
