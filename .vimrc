@@ -43,6 +43,9 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 colorscheme palenight
@@ -68,6 +71,11 @@ let g:coc_global_extensions = [
             \ 'coc-eslint',
             \ 'coc-prettier',
             \ 'coc-json',
+            \ 'coc-python',
+            \ 'coc-git',
+            \ 'coc-pyright',
+            \ 'coc-docker',
+            \ 'coc-yaml',
             \ ]
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
