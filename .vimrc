@@ -71,10 +71,10 @@ let g:coc_global_extensions = [
             \ 'coc-eslint',
             \ 'coc-prettier',
             \ 'coc-json',
-            \ 'coc-python',
             \ 'coc-git',
             \ 'coc-pyright',
             \ 'coc-docker',
+            \ 'coc-jedi',
             \ 'coc-yaml',
             \ ]
 
