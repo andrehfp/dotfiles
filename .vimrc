@@ -34,7 +34,9 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim' " Soothing color scheme for your favorite [best] text editor
+Plug 'sainnhe/sonokai' 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -48,7 +50,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-colorscheme palenight
+colorscheme gruvbox
 set background=dark
 
 let mapleader=" "

@@ -35,7 +35,7 @@ home () {
 #Config bare repository - git
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME';
 #Download video link
-alias yt="youtube-dl --add-metadate -ic --verbose"
+alias yt="youtube-dl --add-metadata -ic --verbose"
 #Download video audio
 alias yta="youtube-dl --add-metadata -xic --verbose"
 alias zsource="source ~/.zshrc"
@@ -62,3 +62,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#asdf 
+. $HOME/.asdf/asdf.sh
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
