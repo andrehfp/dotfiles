@@ -46,6 +46,11 @@ alias gpo="git push origin"
 alias gc="git checkout"
 alias g="git"
 
+#Python Aliases
+alias pi="pip3 install "
+alias py="python3 "
+alias pyi="python3 -i "
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null

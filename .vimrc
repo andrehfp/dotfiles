@@ -51,7 +51,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 colorscheme gruvbox
-set background=dark
+set background=light
 
 let mapleader=" "
 
