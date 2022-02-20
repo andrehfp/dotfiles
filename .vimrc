@@ -67,18 +67,18 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 set completeopt=menuone,noinsert,noselect
 
 let g:coc_global_extensions = [
-            \ 'coc-tsserver',
-            \ 'coc-snippets',
-            \ 'coc-pairs',
-            \ 'coc-eslint',
-            \ 'coc-prettier',
-            \ 'coc-json',
-            \ 'coc-git',
-            \ 'coc-pyright',
-            \ 'coc-docker',
-            \ 'coc-jedi',
-            \ 'coc-yaml',
-            \ ]
+      \ 'coc-tsserver',
+      \ 'coc-snippets',
+      \ 'coc-pairs',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
+      \ 'coc-json',
+      \ 'coc-git',
+      \ 'coc-pyright',
+      \ 'coc-docker',
+      \ 'coc-jedi',
+      \ 'coc-yaml',
+      \ ]
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 "if hidden is not set, TextEdit might fail.
@@ -131,7 +131,7 @@ endif
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
